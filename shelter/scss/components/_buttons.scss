@@ -1,0 +1,6 @@
+.notOnly__btn{
+    @include btn-startScreen;
+    @include btn-font;
+    background: $color-primary;
+    border: none;
+}
