@@ -52,6 +52,14 @@
                         bottom: 0;
 
                     }
+                    .list:first-child::after{
+                        content: '';
+                        height: 3px;
+                        width: 100%;
+                        background: $color-primary;
+                        position: absolute;
+                        bottom: 0;
+                    }
                 }
             }
         }
