@@ -23,6 +23,8 @@
 }
 .btn_slider:hover{
     cursor: pointer;
+    background: $color-primary;
+    transition: .3s;
 }
 .btn__card{
     @include btn-card;
@@ -31,10 +33,19 @@
     border-radius: 100px;
     border: 2px solid #F1CDB3;
 }
+.btn__card:hover{
+    background:$color-primary;
+    transition: .3s;
+}
 .ourFriends__btn{
     @include btn-pets;
     background: $color-primary;
     border: none;
     text-align: center;
-    @include btn-font;
+
+    a{
+        text-decoration: none;
+        @include btn-font;
+        color: $colorDefault-font;
+    }
 }
