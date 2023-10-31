@@ -2,7 +2,7 @@
     font: 35px $fontFamily-primary,serif;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; /* 45.5px */
+    line-height: 129%; /* 45.5px */
     letter-spacing: 2.1px;
     color: $colorDefault-font;
 }
@@ -74,7 +74,6 @@
     height: 52px;
     display: flex;
     padding: 15px 45px;
-    flex-direction: column;
     align-items: center;
     gap: 10px;
     border-radius: 100px;

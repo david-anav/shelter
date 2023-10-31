@@ -81,7 +81,7 @@
         .ourFriends-pets__wrapper {
             @include flex-column;
             align-items: center;
-
+            gap: 45px;
             .ourFriends-pets__header {
                 .ourFriends-pets__title {
                     max-width: 400px;
@@ -92,8 +92,9 @@
 
             .ourFriends-pets__slider {
                 @include flex-column;
-                gap: 45px;
+                gap: 60px;
                 align-items: center;
+                padding: 14px;
                 .slider__container-pets {
                     display: grid;
                     grid-template-columns: 270px 270px 270px 270px;
@@ -105,6 +106,9 @@
                         @include card-possition;
                         width: 270px;
                         height: 435px;
+                        .namecard {
+                            @include card-name;
+                        }
                     }
                 }
                 .pagination{
@@ -120,33 +124,10 @@
                     .dubbleArr-left,.arr-left:hover{
                         background: none;
                     }
-                    .dubble-left{
-                        background-image: url('/shelter/assets/svg/__.svg');
-                        background-repeat: no-repeat;
-                        width: 27px;
-                        height: 23px;
+                    .midle{
+                        background:$color-primary;
+                    }
 
-
-                    }
-                    .pagin-left{
-                        background-image: url('/shelter/assets/svg/arrLeft.svg');
-                        background-repeat: no-repeat;
-                        width: 13px;
-                        height: 23px;
-                    }
-                    .pagin-right{
-                        background-image: url('/shelter/assets/svg/arrowRight.svg');
-                        background-repeat: no-repeat;
-                        width: 27px;
-                        height: 23px;
-                    }
-                    .dubble-right{
-                        background-image: url('/shelter/assets/svg/dubbleArrRight.svg');
-                        background-repeat: no-repeat;
-                        width: 13px;
-                        height: 23px;
-
-                    }
 
                 }
             }
