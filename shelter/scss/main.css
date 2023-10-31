@@ -377,12 +377,16 @@ p {
   align-items: center;
   gap: 10px;
   border-radius: 100px;
+  background: #F1CDB3;
+  border: none;
+}
+.notOnly__btn a {
+  text-decoration: none;
   font-family: Georgia;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
-  background: #F1CDB3;
-  border: none;
+  color: #545454;
 }
 
 .btn_slider {
@@ -609,6 +613,9 @@ p {
   flex-direction: column;
   gap: 10px;
 }
+.start_screen .header .wrapper__header .header__logo .logo__link {
+  text-decoration: none;
+}
 .start_screen .header .wrapper__header .header__logo .logo__title {
   margin: 0;
 }
@@ -811,6 +818,8 @@ p {
   height: 23px;
 }
 .inAdition .wrapper__inAdition .inAdition-content .inAdition_creadit_card .number_card {
+  text-decoration: none;
+  color: #545454;
   font-family: Georgia;
   font-size: 20px;
   font-style: normal;
@@ -908,6 +917,9 @@ p {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+.header-pets .wrapper__header-pets .header-pets__logo .logo__link {
+  text-decoration: none;
 }
 .header-pets .wrapper__header-pets .header-pets__logo .logo__title {
   margin: 0;

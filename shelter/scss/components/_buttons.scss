@@ -1,8 +1,13 @@
 .notOnly__btn{
     @include btn-startScreen;
-    @include btn-font;
     background: $color-primary;
     border: none;
+    a{
+        text-decoration: none;
+        @include btn-font;
+        color: $colorDefault-font
+
+    }
 }
 .btn_slider{
     @include btn-round;
