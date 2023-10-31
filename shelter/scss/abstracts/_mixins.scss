@@ -108,3 +108,14 @@
 
 }
 
+//* MEDIA-OUERY
+
+@mixin media-tablet-size {
+    @media(max-width:$tablets-width ){@content}
+};
+@mixin media-mobile-size {
+    @media(max-width: $mobile-width){@content}
+};
+@mixin media-computed-size{
+    @media(max-width: $computed-width){@content}
+};
