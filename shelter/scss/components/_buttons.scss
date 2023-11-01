@@ -74,4 +74,19 @@
     transform: rotate(90deg);
     height: 30px;
 }
+.btn__arrowLeft{
+    @include media-mobile-size{
+        order:2;
+        margin-right: 160px;
+    }
+}
+.btn__arrowRight{
+    @include media-mobile-size{
+        order: 1;
+        position: absolute;
+        margin-left: 160px
+
+
+    }
+}
 

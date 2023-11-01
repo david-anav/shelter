@@ -23,16 +23,33 @@
                 grid-template-rows: 113px 113px 113px;
                 gap: 55px 60px;
             }
+            @include media-mobile-size{
+                display: grid;
+                grid-template-columns: 130px 130px;
+                grid-template-rows: 130px 130px 130px 130px 130px;
+                column-gap: 30px;
+                row-gap: 30px ;
+                margin-top: 42px;
+            }
                 .possition__block{
                     height: 113px;
                     @include flex-column;
                     align-items: center;
                     justify-content: space-between;
                     margin-right: 120px;
+                    @include media-mobile-size{
+                        width: 130px;
+                        height: 87px;
+                        margin: 0;
+
+
+                    }
                     .possit__icon{
                         width: 60px;
                         height: 60px;
+
                     }
+
                     .text__possit{
                         font-family: Georgia;
                         font-size: 20px;
@@ -40,6 +57,9 @@
                         font-weight: 400;
                         line-height: 115%; /* 23px */
                         letter-spacing: 1.2px;
+                        @include media-mobile-size{
+                            font-size: 15px;
+                        }
                     }
 
                     .food{
@@ -73,37 +93,21 @@
                 .possition__block:nth-child(9){
                     margin-right: 0;
                 }
-                .possition__block{
-                    height: 113px;
-                    @include flex-column;
-                    justify-content: space-between;
-                    align-items: center;
-                    .possit__icon{
-                        width: 60px;
-                        height: 60px;
-                    }
-                    .text__possit{
-                        font-family: Georgia;
-                        font-size: 20px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 115%; /* 23px */
-                        letter-spacing: 1.2px;
-                    }
-                    .vitaminis{
-                        background-image: url('/shelter/assets/svg/icon-vitamins.svg');
-                    }
-                    .medicine{
-                        background-image: url('/shelter/assets/svg/icon-medicines.svg');
-                    }
-                    .collars{
-                        background-image: url('/shelter/assets/svg/icon-collars-leashes.svg');
-                    }
-                    .sleeping-area{
-                        background-image: url('/shelter/assets/svg/icon-sleeping-area.svg');
-                    }
 
+                .vitaminis{
+                    background-image: url('/shelter/assets/svg/icon-vitamins.svg');
                 }
+                .medicine{
+                    background-image: url('/shelter/assets/svg/icon-medicines.svg');
+                }
+                .collars{
+                    background-image: url('/shelter/assets/svg/icon-collars-leashes.svg');
+                }
+                .sleeping-area{
+                    background-image: url('/shelter/assets/svg/icon-sleeping-area.svg');
+                }
+
+
 
         }
     }

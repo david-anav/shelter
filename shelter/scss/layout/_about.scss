@@ -11,25 +11,47 @@
             gap: 80px;
         }
         @include media-mobile-size{
-            @include flex-column;
+            flex-direction: column-reverse;
+            gap: 42px;
         }
         .about-pets{
             display: block;
+            @include media-tablet-size{
+                width: 260px;
+                height: 353.6px;
+            }
         }
         .about__content{
             width: 430px;
-            height: 380px;
+            // height: 380px;
             @include flex-column;
+            @include media-mobile-size{
+                width: inherit;
+                align-items: center;
+            }
             gap: 25px;
             .about__titleCont{
                 margin: 0;
+                @include media-mobile-size{
+                    font-size: 25px;
+                    text-align: center;
+
+                }
                 letter-spacing:3.1px;
             }
             .about__textCont{
                 margin: 0;
+                @include media-mobile-size{
+                    max-width: 270px;
+                    text-align: justify;
+                }
             }
             .about__textCont2{
                 margin: 0;
+                @include media-mobile-size{
+                    max-width: 270px;
+                    text-align: justify;
+                }
             }
         }
     }

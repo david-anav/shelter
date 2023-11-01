@@ -5,6 +5,9 @@
         align-items: center;
 
         gap: 60px;
+        @include media-mobile-size{
+            gap: 42px;
+        }
         .ourFriends__title{
             max-width: 400px;
             text-align: center;
@@ -18,6 +21,13 @@
                 width: inherit;
                 gap: 12px;
             }
+            @include media-mobile-size{
+                position: relative;
+                flex-direction: column-reverse;
+                gap: 20px;
+
+            }
+            
             .slider__container{
                 @include flex-row;
                 gap: 90px;
@@ -25,6 +35,11 @@
                     gap: 40px;
                     overflow: hidden;
                     max-width: 580px;
+                }
+                @include media-mobile-size{
+                    max-width: 270px;
+                    overflow: hidden;
+                    order: 3;
                 }
                 .card-pets{
                     background: $colorbg-cardPets;

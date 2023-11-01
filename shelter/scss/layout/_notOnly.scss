@@ -9,12 +9,23 @@
             margin-top: 60px;
             gap: 100px;
         }
+        @include media-mobile-size{
+            gap: 105px;
+            width: 300px;
+        }
         .notOnly__content{
             @include flex-column;
             gap: 42px;
             .notOnly_title{
                 margin: 0;
                 letter-spacing: 4px;
+                @include media-mobile-size{
+                    font-family: $fontFamily-primary;
+                    font-size: 25px;
+                    line-height: 130%;
+                    letter-spacing: 3.5px;
+                    text-align: center;
+                }
 
             }
             .notOnly__subheading{
@@ -26,9 +37,10 @@
                 max-width: 460px;
                 align-items: center;
             }
+            @include media-mobile-size{
+                text-align: center;
+            }
         }
-        .start-screen{
-            img{display: block;}
             .start-screen-puppy{
                 @include media-tablet-size{
                     width: 569px;
@@ -38,9 +50,7 @@
                 @include media-mobile-size{
                     width: 260px;
                     height: 271.774px;
-                    flex-shrink: 0;
                 }
             }
-        }
     }
 }

@@ -20,7 +20,7 @@ body {
         width: 708px;
     }
     @include media-mobile-size{
-        width: 280px;
+        width: 300px;
     }
 }
 .wrapper__section{
@@ -36,4 +36,7 @@ button:hover{
 
 * {
     box-sizing: border-box;
+}
+main{
+    overflow: hidden;
 }
