@@ -54,3 +54,24 @@
         color: $colorDefault-font;
     }
 }
+.btn-humb{
+    @include flex-column;
+    justify-content: space-between;
+    transition: .5s ease-out;
+
+    width: 30px;
+    height: 22px;
+    .humb__line{
+        width: inherit;
+        height: 2px;
+        background: $color-primary;
+
+    }
+}
+.btn-humb:hover{
+
+    transition: .5s ease-in;
+    transform: rotate(90deg);
+    height: 30px;
+}
+

@@ -29,8 +29,11 @@
                 }
 
             }.header_navigation{
+                .btn-humb{display: none;}
                 @include media-mobile-size{
-                    
+                    .btn-humb{
+                        display: flex
+                    }
                 }
                 .nav__list{
                     @include flex-row;
@@ -39,6 +42,10 @@
                     gap: 35px;
                     padding-left: 0;
                     margin: 0;
+                    @include media-mobile-size{
+                        display: none;
+                    }
+
                     .list{
                         @include flex-row;
                         position: relative;
