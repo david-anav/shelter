@@ -346,6 +346,11 @@ body {
   padding-top: 80px;
   padding-bottom: 100px;
 }
+@media (max-width: 320px) {
+  .wrapper__section {
+    padding: 42px 0 42px 0;
+  }
+}
 
 button:hover {
   cursor: pointer;
@@ -1053,6 +1058,11 @@ p {
   letter-spacing: 1.3px;
   color: #292929;
 }
+@media (max-width: 320px) {
+  .header-pets .wrapper__header-pets .header-pets_navigation {
+    display: none;
+  }
+}
 .header-pets .wrapper__header-pets .header-pets_navigation .nav__list {
   display: flex;
   flex-direction: row;
@@ -1102,6 +1112,12 @@ p {
   align-items: center;
   gap: 45px;
 }
+@media (max-width: 768px) {
+  .main .ourFriends-pets .ourFriends-pets__wrapper {
+    padding-bottom: 76px;
+    gap: 30px;
+  }
+}
 .main .ourFriends-pets .ourFriends-pets__wrapper .ourFriends-pets__header .ourFriends-pets__title {
   max-width: 400px;
   text-align: center;
@@ -1114,10 +1130,16 @@ p {
   align-items: center;
   padding: 14px;
 }
+@media (max-width: 768px) {
+  .main .ourFriends-pets .ourFriends-pets__wrapper .ourFriends-pets__slider {
+    gap: 40px;
+    padding: 0;
+  }
+}
 .main .ourFriends-pets .ourFriends-pets__wrapper .ourFriends-pets__slider .slider__container-pets {
   display: grid;
-  grid-template-columns: 270px 270px 270px 270px;
-  grid-template-rows: 435px 435px;
+  grid-template-columns: 270px 270px;
+  grid-template-rows: 435px 435px 435px;
   gap: 30px 40px;
 }
 .main .ourFriends-pets .ourFriends-pets__wrapper .ourFriends-pets__slider .slider__container-pets .card-pets {

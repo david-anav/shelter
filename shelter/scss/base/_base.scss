@@ -26,6 +26,9 @@ body {
 .wrapper__section{
     padding-top: 80px;
     padding-bottom: 100px;
+    @include media-mobile-size{
+        padding: 42px 0 42px 0;
+    }
 }
 button:hover{
     cursor: pointer;

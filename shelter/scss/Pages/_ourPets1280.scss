@@ -31,6 +31,9 @@
         }
 
         .header-pets_navigation {
+            @include media-mobile-size{
+                display: none;
+            }
             .nav__list {
                 @include flex-row;
                 list-style: none;
@@ -82,6 +85,10 @@
             @include flex-column;
             align-items: center;
             gap: 45px;
+            @include media-tablet-size{
+                padding-bottom: 76px;
+                gap: 30px;
+            }
             .ourFriends-pets__header {
                 .ourFriends-pets__title {
                     max-width: 400px;
@@ -95,10 +102,14 @@
                 gap: 60px;
                 align-items: center;
                 padding: 14px;
+                @include media-tablet-size{
+                    gap: 40px;
+                    padding: 0;
+                }
                 .slider__container-pets {
                     display: grid;
-                    grid-template-columns: 270px 270px 270px 270px;
-                    grid-template-rows: 435px 435px;
+                    grid-template-columns: 270px 270px;
+                    grid-template-rows: 435px 435px 435px;
                     gap: 30px 40px;
 
                     .card-pets {

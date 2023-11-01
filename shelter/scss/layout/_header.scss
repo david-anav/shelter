@@ -29,6 +29,9 @@
                 }
 
             }.header_navigation{
+                @include media-mobile-size{
+                    
+                }
                 .nav__list{
                     @include flex-row;
                     list-style: none;
