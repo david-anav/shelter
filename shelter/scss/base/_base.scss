@@ -8,11 +8,9 @@ body {
     margin: auto;
     @include media-tablet-size{
         max-width: 768px;
-        overflow: hidden;
     }
     @include media-mobile-size{
         max-width: 320px;
-        overflow: hidden;
     }
 }
 .wrapper{

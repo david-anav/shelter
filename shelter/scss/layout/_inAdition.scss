@@ -1,9 +1,14 @@
 .inAdition{
+    background: $colorbg-subRrimary;
     .wrapper__inAdition{
         @include flex-row;
         align-items: center;
         justify-content: center;
+        @include media-tablet-size{
+            display: flex;
+            flex-direction: column-reverse;
 
+        }
         gap: 30px;
         .inAdition-dog{
             background-image: url('/shelter/assets/png/donation-dog.png');

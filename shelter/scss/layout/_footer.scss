@@ -4,6 +4,14 @@
         @include flex-row;
         justify-content: space-between;
         padding-top: 40px;
+        @include media-tablet-size{
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 60px;
+            padding-top: 30px;
+
+        }
+
         .contacts{
             @include flex-column;
             gap: 40px;
@@ -43,6 +51,9 @@
         .location{
             @include flex-column;
             gap: 40px;
+            @include media-tablet-size{
+                gap: 33px;
+            }
             .location__title{
                 .title_block{
                     margin: 0;

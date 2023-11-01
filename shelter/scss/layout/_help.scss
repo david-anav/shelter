@@ -12,17 +12,23 @@
             }
         }
         .help_content{
-            @include flex-column;
+            display: flex;
+            flex-direction: row;
             margin-top: 60px;
-            gap: 55px;
-            .help__contPossition1{
-                @include flex-row;
-                gap: 120px;
+            flex-wrap: wrap;
+            justify-content: center;
+            @include media-tablet-size{
+                display: grid;
+                grid-template-columns: 170px 170px 170px;
+                grid-template-rows: 113px 113px 113px;
+                gap: 55px 60px;
+            }
                 .possition__block{
                     height: 113px;
                     @include flex-column;
                     align-items: center;
                     justify-content: space-between;
+                    margin-right: 120px;
                     .possit__icon{
                         width: 60px;
                         height: 60px;
@@ -35,6 +41,7 @@
                         line-height: 115%; /* 23px */
                         letter-spacing: 1.2px;
                     }
+
                     .food{
                         background-image: url('/shelter/assets/svg/icon-pet-food.svg');
                     }
@@ -50,13 +57,22 @@
                     .shamp{
                         background-image: url('/shelter/assets/svg/icon-shampoos.svg');
                     }
+                    @include media-tablet-size{
+                        margin: 0;
+                    }
                 }
-
-            }
-            .help__contPossition2{
-                @include flex-row;
-                justify-content: space-around;
-                // gap: 120px;
+                .possition__block:nth-child(5){
+                    margin-right: 0;
+                }
+                .possition__block:nth-child(6),.possition__block:nth-child(7),.possition__block:nth-child(8),.possition__block:nth-child(9){
+                    margin-top: 55px;
+                    @include media-tablet-size{
+                        margin: 0;
+                    }
+                }
+                .possition__block:nth-child(9){
+                    margin-right: 0;
+                }
                 .possition__block{
                     height: 113px;
                     @include flex-column;
@@ -89,7 +105,6 @@
 
                 }
 
-            }
         }
     }
 }

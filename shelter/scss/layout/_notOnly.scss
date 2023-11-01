@@ -4,6 +4,11 @@
         align-items: center;
         gap: 42px;
         margin-top: 90px;
+        @include media-tablet-size{
+            @include flex-column;
+            margin-top: 60px;
+            gap: 100px;
+        }
         .notOnly__content{
             @include flex-column;
             gap: 42px;
@@ -16,6 +21,25 @@
                 margin-top: 0;
                 margin-bottom: 0;
                 color: $colorDefault-font;
+            }
+            @include media-tablet-size{
+                max-width: 460px;
+                align-items: center;
+            }
+        }
+        .start-screen{
+            img{display: block;}
+            .start-screen-puppy{
+                @include media-tablet-size{
+                    width: 569px;
+                    height: 593px;
+                    flex-shrink: 0;
+                }
+                @include media-mobile-size{
+                    width: 260px;
+                    height: 271.774px;
+                    flex-shrink: 0;
+                }
             }
         }
     }

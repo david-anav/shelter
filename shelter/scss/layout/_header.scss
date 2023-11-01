@@ -1,6 +1,8 @@
 .start_screen{
     background-image: url('/shelter/assets/png/start-screen-background.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
     .header{
         padding-top: 30px;
         .wrapper__header{
