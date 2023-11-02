@@ -31,9 +31,15 @@
         }
 
         .header-pets_navigation {
-            @include media-mobile-size{
-                display: none;
-            }
+            .btn-humb{display: none;}
+                @include media-mobile-size{
+                    .btn-humb{
+                        display: flex;
+                        .humb__line{
+                            background:#000;
+                        }
+                    }
+                }
             .nav__list {
                 @include flex-row;
                 list-style: none;
@@ -41,7 +47,9 @@
                 gap: 35px;
                 padding-left: 0;
                 margin: 0;
-
+                @include media-mobile-size{
+                    display: none;
+                }
                 .list {
                     @include flex-row;
                     position: relative;
@@ -89,6 +97,11 @@
                 padding-bottom: 76px;
                 gap: 30px;
             }
+            @include media-mobile-size{
+                gap: 42px;
+                padding-bottom: 42px;
+
+            }
             .ourFriends-pets__header {
                 .ourFriends-pets__title {
                     max-width: 400px;
@@ -108,9 +121,24 @@
                 }
                 .slider__container-pets {
                     display: grid;
-                    grid-template-columns: 270px 270px;
-                    grid-template-rows: 435px 435px 435px;
+                    grid-template-columns: 270px 270px 270px 270px;
+                    grid-template-rows: 435px 435px;
                     gap: 30px 40px;
+
+                    @include media-tablet-size{
+                        display: grid;
+                        grid-template-columns: 270px 270px;
+                        grid-template-rows: 435px 435px 435px;
+                        gap: 30px 40px;
+
+                    }
+                    @include media-mobile-size{
+                        overflow: hidden;
+                        grid-template-columns: 270px ;
+                        grid-template-rows:repeat(1, 1fr);
+                        flex: 1 1 1365px;
+                        gap: 30px;
+                    }
 
                     .card-pets {
                         background: $colorbg-cardPets;
@@ -126,6 +154,9 @@
                     @include flex-row;
                     align-items: center;
                     gap: 20px;
+                    @include media-mobile-size{
+                        gap: 10px;
+                    }
                     .dubbleArr-left,.arr-left{
                         border-color: #CDCDCD;
                         display: flex;
