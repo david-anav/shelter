@@ -618,9 +618,9 @@ p {
 @media (max-width: 768px) {
   .footer .wrapper__footer {
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 60px;
+    justify-content: space-around;
     padding-top: 30px;
+    gap: 60px;
   }
 }
 @media (max-width: 320px) {
@@ -635,6 +635,11 @@ p {
   flex-direction: column;
   gap: 40px;
 }
+@media (max-width: 768px) {
+  .footer .wrapper__footer .contacts {
+    max-width: 278px;
+  }
+}
 @media (max-width: 320px) {
   .footer .wrapper__footer .contacts {
     align-items: center;
@@ -643,6 +648,16 @@ p {
 .footer .wrapper__footer .contacts .contacts__title .title_block {
   margin: 0;
   color: #F6F6F6;
+}
+@media (max-width: 768px) {
+  .footer .wrapper__footer .contacts .contacts__title .title_block {
+    letter-spacing: 1.2px;
+  }
+}
+@media (max-width: 320px) {
+  .footer .wrapper__footer .contacts .contacts__title .title_block {
+    text-align: center;
+  }
 }
 .footer .wrapper__footer .contacts .contacts__mail {
   display: flex;
@@ -694,6 +709,11 @@ p {
     gap: 33px;
   }
 }
+@media (max-width: 768px) and (max-width: 768px) {
+  .footer .wrapper__footer .location {
+    max-width: 278px;
+  }
+}
 @media (max-width: 320px) {
   .footer .wrapper__footer .location {
     align-items: center;
@@ -703,16 +723,34 @@ p {
   margin: 0;
   color: #F6F6F6;
 }
+@media (max-width: 768px) {
+  .footer .wrapper__footer .location .location__title .title_block {
+    letter-spacing: 1.2px;
+  }
+}
+@media (max-width: 320px) {
+  .footer .wrapper__footer .location .location__title .title_block {
+    text-align: center;
+  }
+}
 .footer .wrapper__footer .location .location__adress {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
+  width: 100%;
+  justify-content: start;
+}
+@media (max-width: 320px) {
+  .footer .wrapper__footer .location .location__adress {
+    gap: 18px;
+  }
 }
 .footer .wrapper__footer .location .location__adress .adress-icon {
   background-image: url("/shelter/assets/svg/icon-marker.svg");
   width: 22px;
   height: 32px;
+  background-size: cover;
 }
 .footer .wrapper__footer .location .location__adress .adress1 {
   max-width: 260px;
@@ -726,6 +764,11 @@ p {
   letter-spacing: 1.2px;
   text-decoration: none;
   color: #F1CDB3;
+}
+@media (max-width: 768px) {
+  .footer .wrapper__footer .location .location__adress .adress {
+    letter-spacing: unset;
+  }
 }
 .footer .wrapper__footer .footer-puppy {
   background-image: url("/shelter/assets/png/footer-puppy.png");

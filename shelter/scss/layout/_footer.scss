@@ -6,9 +6,9 @@
         padding-top: 40px;
         @include media-tablet-size{
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 60px;
+            justify-content: space-around;
             padding-top: 30px;
+            gap: 60px;
         }
         @include media-mobile-size{
             flex-direction: column;
@@ -19,13 +19,25 @@
         .contacts{
             @include flex-column;
             gap: 40px;
+            @include media-tablet-size{
+                max-width: 278px;
+            }
             @include media-mobile-size{
                 align-items: center;
             }
             .contacts__title{
                 .title_block{
                     margin: 0;
+
                     color: $colorbg-subRrimary;
+
+                    @include media-tablet-size{
+                letter-spacing: 1.2px;
+
+                    }
+                    @include media-mobile-size{
+                        text-align: center;
+                    }
 
                 }
             }
@@ -60,6 +72,9 @@
             gap: 40px;
             @include media-tablet-size{
                 gap: 33px;
+                @include media-tablet-size{
+                    max-width: 278px;
+                }
             }
             @include media-mobile-size{
                 align-items: center;
@@ -68,23 +83,44 @@
                 .title_block{
                     margin: 0;
                     color: $colorbg-subRrimary;
+                    @include media-tablet-size{
+                        letter-spacing: 1.2px;
+
+                    }
+                    @include media-mobile-size{
+                        text-align: center;
+                    }
 
                 }
             }
             .location__adress{
                 @include flex-row;
                 align-items: center;
+                @include media-tablet-size{
+
+                }
+                @include media-mobile-size{
+                    gap: 18px ;
+
+                }
                 gap: 20px;
+                width: 100%;
+                justify-content: start;
                 .adress-icon{
                     background-image: url("/shelter/assets/svg/icon-marker.svg");
                     width: 22px;
                     height: 32px;
+                    background-size: cover;
                 }
                 .adress1{
                     max-width: 260px;
                 }
                 .adress{
                     @include footer-links;
+                    @include media-tablet-size{
+                        letter-spacing: unset;
+
+                    }
                 }
             }
         }
